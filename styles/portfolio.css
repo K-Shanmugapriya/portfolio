@@ -466,6 +466,8 @@ header .follow a:hover {
 
 
 /* media queries  */
+
+/* Tablet */
 @media (max-width:991px) {
 
   html {
@@ -487,9 +489,40 @@ header .follow a:hover {
   header.active {
     left: 0%;
   }
+  
+  .home .content {
+    flex: 1 1 40rem;
+    text-align: center;
+  }
+
+  .about .row-1 .content {
+    flex: 1 1 50rem;
+    padding-right: 6rem;
+    text-align: center;
+  
+  }
+
+  .home .image img {
+    width: 75%;
+    height: 50%;
+    /* border-radius: 50%;*/
+  }
+
+  .about .row-1 .image {
+    flex: 1 1 25rem;
+    margin-left: 18%;
+    /*padding-left: 15%;*/
+  
+  }
+  
+  .about .row-1 .image img {
+    height: 100%;
+    width: 75%;
+  }
 
 }
 
+/* Mobile */
 @media (max-width:450px) {
 
   html {
@@ -502,8 +535,61 @@ header .follow a:hover {
   }
 
   .about .row-2 .skills .progress {
-    padding: 1rem 0px 1rem 120px;
+    padding: 1rem 0px 1rem 100px;
+  }
+  
+  .about .row-1 .content {
+    flex: 1 1 50rem;
+    padding-right: 6rem;
+    text-align: center;
+  
   }
 
+  .home .content {
+    flex: 1 1 40rem;
+    text-align: center;
+  }
+
+  .home .image {
+    flex: 1 1 40rem;
+    margin-left: 22%;
+
+  }
+  .home .image img {
+    width: 75%;
+    height: 100%;
+    /* border-radius: 50%;*/
+  }
 
 }
+
+/* Laptop */
+@media (max-width:1024px) {
+  .about .row-1 .content {
+    flex: 1 1 50rem;
+    padding-right: 6rem;
+    text-align: center;
+  
+  }
+
+  .home .content {
+    flex: 1 1 40rem;
+    text-align: center;
+  }
+
+  .home .image {
+    flex: 1 1 40rem;
+    margin-left: 22%;
+
+  }
+
+  .home .image img {
+    width: 75%;
+    height: 50%;
+    /* border-radius: 50%;*/
+  }
+
+ 
+
+}
+
